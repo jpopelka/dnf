@@ -1874,9 +1874,7 @@ Transaction Summary
             else:
                 print(_("Command Line   :"), old.cmdline)
 
-        # TODO:
-        # comment = self.history.addon_data.read(old.tid, item='transaction-comment')
-        comment = ""
+        comment = old.comment
         if comment:
             print(_("Comment        :"), comment)
 
